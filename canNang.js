@@ -4,6 +4,7 @@ function kiemtra() {
     let bmi = can_nang / (Math.pow(chieu_cao, 2))
     let result = "";
     if (can_nang === "" && chieu_cao === "") {
+        alert("Bạn cần nhập cân nặng và chiều cao");
     }
     if (bmi < 18.5) {
         result = "Thiếu cân . Ăn thật nhiều vào nhé" + "<img src = 'https://qoobee.com/wp-content/uploads/licking.gif' width='100' height= '100'>";
@@ -15,4 +16,4 @@ function kiemtra() {
         result = "Béo phì . Bạn cần giảm cân lại" + "<img src = 'https://qoobee.com/wp-content/uploads/EMO_1231.gif' width='100' height= '100'>";
     }
     document.getElementById("result").innerHTML = "Chỉ số BMI là: " + bmi + ". Bạn " + "<b>"+ result + "</b>";
-} 
+}
